@@ -6,9 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pari e Dispari</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Buttons -->
+    <div class="buttons-container">
+        <h1>Scegli tra pari e dispari</h1>
+        <form action="#">
+            <button type="button" id="even">Pari</button>
+            <button type="button" id="odd">Dispari</button>
+        </form>
+    </div>
+
+    <div class="text-container hidden">
+        <form action="#">
+            <label for="user-number">Ora scegli un numero tra 1 e 5</label>
+            <input type="text" name="user-number" id="user-number">
+            <button type="button" id="choose">Invia</button>
+        </form>
+    </div>
+    <!-- // Buttons -->
+
     <!-- JS -->
     <script src="main.js"></script>
 </body>
