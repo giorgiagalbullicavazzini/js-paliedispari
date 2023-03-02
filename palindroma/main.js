@@ -9,11 +9,11 @@ function compare (array1, array2) {
     // IF these two are equal, the word is a palindrome one
     for (let i = 0; i < array1.length; i++) {
         if (array1[i] !== array2[i]) {
-            return alert('La parola NON è palindroma.');
+            return false;
         }
     }
 
-    return alert('La parola è palindroma.');
+    return true;
 }
 
 ////////////
@@ -45,6 +45,10 @@ button.addEventListener ('click',
                 drow.push(input[i]);
             }
 
-            compare(word, drow);
+            if (compare(word, drow) === false) {
+                alert('La parola NON è palindroma.');
+            } else {
+                alert('La parola è palindroma.');
+            }
         }
     })
